@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>PORTFOLIO</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top bg-black">
+    <div class="header-container-fluid container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex me-auto me-xl-0 ">
+        
+        <h1 class="sitename text-light" style="font-family: Mistral, sans-serif;"><strong>MyPortfolio</strong></h1>
+      </a>
+
+      <nav class="navmenu">
+        <ul>
+          <li><a href="index.html" style="color: aliceblue;text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='orange';" onmouseout="this.style.color='aliceblue';">Home</a></li>
+          <li><a href="#about" style="color: aliceblue;text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='orange';" onmouseout="this.style.color='aliceblue';">About Me</a></li>
+          <li><a href="#resume" style="color: aliceblue;text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='orange';" onmouseout="this.style.color='aliceblue';">Resume</a></li>
+          <li><a href="#skills" style="color: aliceblue;text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='orange';" onmouseout="this.style.color='aliceblue';">Skills</a></li>
+          <li><a href="#portfolio" style="color: aliceblue; text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='orange';" onmouseout="this.style.color='aliceblue';">Portfolio</a></li>
+          <li><a href="#contact" style="color: aliceblue;text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='orange';" onmouseout="this.style.color='aliceblue';">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h2 style="font-family: Abel, sans-serif;" >Sanika Deshpande</h2>
+            <p class="lead">Problem Solving through the way of storytelling and visual art.</p>
+
+            <p class="typing-text mb-4" style="font-family: Monospace, sans-serif;"></p>
+
+            <script>
+              const textArray = [
+                "I am a designer!",
+                "I am experimental!",
+                "I am bold!",
+                "I am expressive!"
+              ];
+            
+              let textIndex = 0;
+              let charIndex = 0;
+              const typingSpeed = 100; // Speed of typing effect
+              const eraseSpeed = 50; // Speed of erasing effect
+              const delayBetweenTexts = 1000; // Delay before next text starts
+            
+              function typeText() {
+                if (charIndex < textArray[textIndex].length) {
+                  document.querySelector(".typing-text").textContent += textArray[textIndex].charAt(charIndex);
+                  charIndex++;
+                  setTimeout(typeText, typingSpeed);
+                } else {
+                  setTimeout(eraseText, delayBetweenTexts);
+                }
+              }
+            
+              function eraseText() {
+                if (charIndex > 0) {
+                  document.querySelector(".typing-text").textContent = textArray[textIndex].substring(0, charIndex - 1);
+                  charIndex--;
+                  setTimeout(eraseText, eraseSpeed);
+                } else {
+                  textIndex = (textIndex + 1) % textArray.length; // Move to next text
+                  setTimeout(typeText, typingSpeed);
+                }
+              }
+            
+              document.addEventListener("DOMContentLoaded", function () {
+                setTimeout(typeText, typingSpeed);
+              });
+            </script>
+<br>
+<br>
+<br>
+
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+              <a href="#portfolio" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-outline-secondary">Let's Catchup!</a>
+              <a href="#contact" class="btn btn-outline-secondary">Know More!</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <img src="/assets/img/woman1.jpg" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section dark-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <div class="title-shape">
+        </div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-image">
+              <img src="/assets/img/profile1.jpg" class="img-fluid rounded-4">
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+
+              <p class="heading"></p><br>
+              <h1 style="font-family: Livvic Light, sans-serif;" class = "btn-primary display-5 mb-4"><strong>About Me</strong></h1><br>
+              <style>
+                  .heading {
+                      position: relative;
+                      padding-left: 20px; /* Space for the line */
+                      font-size: 24px;
+                      color: aliceblue;
+                  }
+
+                  .heading::before {
+                      content: "";
+                      position: absolute;
+                      left: 0;
+                      top: 50%;
+                      width: 100px; /* Length of the line */
+                      height: 4px; /* Thickness of the line */
+                      background-color: orange;
+                      transform: translateY(-50%);
+                  }
+              </style>
+              <h2 style="font-family: Livvic Light, sans-serif;">Visual Designer &amp; Web Developer</h2>
+    
+              <p class="lead mb-4">Sanika Deshpande is a Communication Design student passionate about exploration and experimentation. She loves nature walks, discovering new ideas, and embracing creativity—often in quiet contemplation (for surprisingly long periods, haha!).</p>
+<br>
+              <p class="typing-text mb-4" style="font-family: Monospace, sans-serif;">Experimenting through Boldness is my style!</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <!-- Section Title -->
+    <br>
+    <br>
+    <br>
+    <div class="container" data-aos="fade-up">
+      <p class="heading4"></p><br>
+      <h1 style="font-family: Livvic Light, sans-serif;" class = "btn-primary display-5 mb-4"><strong>Resume</strong></h1>
+      <style>
+          .heading4 {
+              position: relative;
+              padding-left: 20px; /* Space for the line */
+              font-size: 24px;
+              color: aliceblue;
+          }
+
+          .heading4::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 50%;
+              width: 100px; /* Length of the line */
+              height: 4px; /* Thickness of the line */
+              background-color: orange;
+              transform: translateY(-50%);
+          }
+      </style>
+
+      <p >Sanika Deshpande is a Visual & Communication Designer specializing in branding, typography, UI/UX, motion graphics, and illustration. She blends experimentation with storytelling to create bold, engaging, and impactful visual experiences.</p>
+    </div><!-- End Section Title -->
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume section">
+    <a href="/assets/projects/Activity - 1 grid system 4.pdf" target="_blank" download>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-secondary">Download PDF</button>
+    </a>
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+    </section><!-- /About Section -->
+
+     <!-- About Section -->
+     <section id="about" class="about section dark-background">
+
+      <!-- Section Title -->
+      <div class="container" data-aos="fade-up">
+        <p class="heading"></p><br>
+        <h1 style="font-family: Livvic Light, sans-serif;" class = "btn-primary display-5 mb-4"><strong>Skills</strong></h1>
+        <style>
+          .heading {
+              position: relative;
+              padding-left: 20px; /* Space for the line */
+              font-size: 24px;
+              color: aliceblue;
+          }
+
+          .heading::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 50%;
+              width: 100px; /* Length of the line */
+              height: 4px; /* Thickness of the line */
+              background-color: orange;
+              transform: translateY(-50%);
+          }
+          </style>
+      </div><!-- End Section Title -->
+      
+
+      <div class="container" data-aos="fade-up"></div>
+      <div class="container mt-3" data-aos="fade-up">
+        <p style="font-family: Livvic Light, sans-serif;">Sanika Deshpande, a Communication Design student, explores branding, typography, UI/UX, and illustration with an experimental and interactive approach. She enjoys blending creativity with functionality, pushing design boundaries, and crafting visually engaging experiences that connect with audiences through bold storytelling, innovative concepts, and dynamic visuals.</p>
+        <button type="button" class="btn btn-light" data-bs-toggle="collapse" data-bs-target="#demo">Know More!</button>
+        
+        <div id="demo" class="collapse" style="font-family: Livvic Light, sans-serif;">
+          <br>
+          - Graphic Design & Branding <br>
+          - Typography & Experimental Type <br>
+          - UI/UX & Interactive Design <br>
+          - Illustration & Mixed Media <br>
+          - Concept Development & Storytelling <br>
+          - Creative Coding & Motion Graphics   <br>
+              </div>
+      </div>
+      
+      </body>
+      </html>
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 skills-animation">
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3>Illustrator</h3>
+              <p>Crafting clean, vector-based designs with precision and creativity.</p>
+              <span class="text-end d-block">90%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-box">
+              <h3>Photoshop</h3>
+              <p>Enhancing visuals through editing, retouching, and creative compositions.</p>
+              <span class="text-end d-block">80%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-box">
+              <h3>Premiere Pro</h3>
+              <p>Editing and refining videos for compelling storytelling and flow.</p>
+              <span class="text-end d-block">60%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+              <h3>After Effects</h3>
+              <p>Creating dynamic motion graphics and smooth visual animations.</p>
+              <span class="text-end d-block">60%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3>Illustrations and Storytelling</h3>
+              <p>Expressing narratives through engaging, hand-drawn and digital illustrations.</p>
+              <span class="text-end d-block">70%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-box">
+              <h3>UI/UX & Interactive Design</h3>
+              <p>Designing user-friendly interfaces with a focus on experience.</p>
+              <span class="text-end d-block">65%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-box">
+              <h3>Typography and Typesets</h3>
+              <p> Experimenting with type to enhance communication and visual identity.</p>
+              <span class="text-end d-block">70%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+              <h3>Experimental Media</h3>
+              <p>Exploring unconventional mediums to push creative boundaries further.</p>
+              <span class="text-end d-block">65%</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+
+                      <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+
+            
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+              <img src="/assets/img/img1.jpeg" alt="Los Angeles" class="custom1-img">
+            </div>
+            <div class="carousel-item">
+              <img src="/assets/img/img2.jpeg" alt="Chicago" class="custom2-img">
+            </div>
+            <div class="carousel-item">
+              <img src="/assets/img/img3.jpeg" alt="New York" class="custom3-img">
+            </div>
+          </div>
+
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <br>
+        <br>
+        <br>
+
+          
+
+    <div class="container section-title" data-aos="fade-up">
+    </div>
+
+   
+    <div class="resume-block" data-aos="fade-up" data-aos-delay="100">
+      <p class="heading2"></p><br>
+                <h1 style="font-family: Livvic Light, sans-serif;" class = "btn-primary display-5 mb-4"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Education</strong></h1><br>
+                <style>
+                  .heading2 {
+                      position: relative;
+                      padding-left: 20px; /* Space for the line */
+                      font-size: 24px;
+                      color: aliceblue;
+                  }
+
+                  .heading2::before {
+                      content: "";
+                      position: absolute;
+                      left: 110px;
+                      top: 50%;
+                      width: 100px; /* Length of the line */
+                      height: 4px; /* Thickness of the line */
+                      background-color: orange;
+                      transform: translateY(-50%);
+                  }
+              </style>
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item  position-relative">
+            <div class="icon">
+              <i class="bi bi-activity"></i>
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Vikhe Patil Memorial School</h3>
+            </a>
+            <p>2015-2021</p>
+              <span class="period">High School</span>
+              <p class="description">Built strong academic and artistic foundations.</p>
+          </div>
+        </div>
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>ORBIS School, Pune</h3>
+            </a>
+            <p>2021-2023</p>
+              <span class="period">Junior College</span>
+              <p class="description">Explored creative thinking and foundational design concepts.</p>
+            </div>
+          </div>
+          <div class="row gy-4">
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item  position-relative">
+                <div class="icon">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Karnavati University</h3>
+            </a>
+            <p>2023 - Present</p>
+              <span class="period">Bachelor’s in Communication Design</span>
+              <p class="description">Developing skills in branding, typography, UI/UX, motion graphics, and experimental media..</p>
+              </div>
+            </div>
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container" data-aos="fade-up">
+        <p class="heading1"></p><br>
+        <h1 style="font-family: Livvic Light, sans-serif;" class = "btn-primary display-5 mb-4"><strong>Portfolio</strong></h1><br>
+            <style>
+                  .heading1 {
+                      position: relative;
+                      padding-left: 20px; /* Space for the line */
+                      font-size: 24px;
+                      color: aliceblue;
+                  }
+
+                  .heading1::before {
+                      content: "";
+                      position: absolute;
+                      left: 0;
+                      top: 50%;
+                      width: 100px; /* Length of the line */
+                      height: 4px; /* Thickness of the line */
+                      background-color: orange;
+                      transform: translateY(-50%);
+                  }
+              </style>
+        <div class="title-shape">
+        </div>
+        <p>A curated collection of works showcasing branding, typography, UI/UX, motion graphics, and illustration. Each project reflects a blend of creativity, storytelling, and experimentation, aiming to deliver engaging, immersive, and meaningful visual experiences.</p><br>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+
+          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="col-lg-4 col-md-4 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+  
+                <div class="portfolio-image">
+          
+                     <img src="/assets/img/project1img.jpg" class="img-fluid" alt="" loading="lazy">
+                  
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Typography Posters</span>
+                  <a href="/assets/projects/chumbak posters f1.pdf" target="_blank"><h3 style="font-family: livvic, sans-serif;" >Creative Poster Making</h3></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-4 portfolio-item isotope-item filter-graphics">
+              <div class="portfolio-card">
+                  
+                <div class="portfolio-image">
+                  <img src="/assets/img/project2img.jpg" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                   
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Illustration Zien</span>
+                  <a href="/assets/projects/Comic illustration mohini.pdf illustration mohini.pdf" target="_blank"><h3  style="font-family: livvic, sans-serif;" >Storytelling through Illustrations</h3></a>
+                
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-4 portfolio-item isotope-item filter-motion">
+              <div class="portfolio-card">
+                 
+                <div class="portfolio-image">
+                  <img src="/assets/img/project3img.jpg" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category ">Magazine</span>
+                  <a href="/assets/projects/Magazine final drafttttt.pdf" target="_blank"> <h3 style="font-family: livvic , sans-serif;" >The What If? Series</h3></a>
+      
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact section dark-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <div class="content" data-aos="fade-up" data-aos-delay="200">
+
+              <p class="heading4"></p><br>
+              <div class="section-category mb-3">Contact</div>                
+              <style>
+                  .heading4 {
+                      position: relative;
+                      padding-left: 20px; /* Space for the line */
+                      font-size: 24px;
+                      color: aliceblue;
+                  }
+
+                  .heading4::before {
+                      content: "";
+                      position: absolute;
+                      left: 0;
+                      top: 50%;
+                      width: 100px; /* Length of the line */
+                      height: 4px; /* Thickness of the line */
+                      background-color: orange;
+                      transform: translateY(-50%);
+                  }
+              </style>
+
+              <h2 class="display-5 mb-4">Let's catchup if you are interested in this! <br></h2>
+              <div class="contact-info mt-5">
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-envelope-at me-3" style="color:rgb(127, 127, 255);"></i>
+                  <span>example@gmail.com</span>
+                </div>
+
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-telephone me-3" style="color: rgb(127, 127, 255);"></i>
+                  <span>+91234567890</span>
+                </div>
+
+                <div class="info-item d-flex mb-4">
+                  <i class="bi bi-geo-alt me-3" style="color:rgb(127, 127, 255);"></i>
+                  <span>B24, Abc road, Pune</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <h1><br><br><br>&nbsp;Thankyou!</h1>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">EasyFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <h3><br><strong>Hire Me!</strong></h3>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
