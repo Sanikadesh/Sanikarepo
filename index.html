@@ -496,103 +496,156 @@
 
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+<section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
-      <div class="container" data-aos="fade-up">
-        <p class="heading1"></p><br>
-        <h1 style="font-family: Livvic Light, sans-serif;" class = "btn-primary display-5 mb-4"><strong>Portfolio</strong></h1><br>
-            <style>
-                  .heading1 {
-                      position: relative;
-                      padding-left: 20px; /* Space for the line */
-                      font-size: 24px;
-                      color: aliceblue;
-                  }
+  <!-- Section Title -->
+  <div class="container" data-aos="fade-up">
+    <p class="heading1"></p><br>
+    <h1 style="font-family: Livvic Light, sans-serif;" class="btn-primary display-5 mb-4"><strong>Portfolio</strong></h1><br>
+    
+    <style>
+      .heading1 {
+        position: relative;
+        padding-left: 20px; /* Space for the line */
+        font-size: 24px;
+        color: aliceblue;
+      }
 
-                  .heading1::before {
-                      content: "";
-                      position: absolute;
-                      left: 0;
-                      top: 50%;
-                      width: 100px; /* Length of the line */
-                      height: 4px; /* Thickness of the line */
-                      background-color: orange;
-                      transform: translateY(-50%);
-                  }
-              </style>
-        <div class="title-shape">
-        </div>
-        <p>A curated collection of works showcasing branding, typography, UI/UX, motion graphics, and illustration. Each project reflects a blend of creativity, storytelling, and experimentation, aiming to deliver engaging, immersive, and meaningful visual experiences.</p><br>
-      </div><!-- End Section Title -->
+      .heading1::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100px; /* Length of the line */
+        height: 4px; /* Thickness of the line */
+        background-color: orange;
+        transform: translateY(-50%);
+      }
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      /* Updated Styles */
+      .portfolio-card {
+        border: none; /* Remove unnecessary borders */
+      }
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+      .portfolio-image {
+        height: 400px; /* Increase height */
+        overflow: hidden; /* Prevent overflow */
+      }
 
+      .portfolio-image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; /* Ensures the image fills the space properly */
+      }
 
-          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+      .portfolio-content {
+        background-color: transparent; /* Removes grey box */
+        padding: 10px 0; /* Reduces padding */
+        text-align: center; /* Centers text */
+      }
+    </style>
 
-            <div class="col-lg-4 col-md-4 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
-  
-                <div class="portfolio-image">
-          
-                     <img src="/assets/img/project1img.jpg" class="img-fluid" alt="" loading="lazy">
-                  
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Typography Posters</span>
-                  <a href="/assets/projects/chumbak posters f1.pdf" target="_blank"><h3 style="font-family: livvic, sans-serif;" >Creative Poster Making</h3></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+    <div class="title-shape"></div>
+    <p>A curated collection of works showcasing branding, typography, UI/UX, motion graphics, and illustration. Each project reflects a blend of creativity, storytelling, and experimentation, aiming to deliver engaging, immersive, and meaningful visual experiences.</p><br>
+  </div><!-- End Section Title -->
 
-            <div class="col-lg-4 col-md-4 portfolio-item isotope-item filter-graphics">
-              <div class="portfolio-card">
-                  
-                <div class="portfolio-image">
-                  <img src="/assets/img/project2img.jpg" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                   
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Illustration Zien</span>
-                  <a href="/assets/projects/Comic illustration mohini.pdf illustration mohini.pdf" target="_blank"><h3  style="font-family: livvic, sans-serif;" >Storytelling through Illustrations</h3></a>
-                
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+      <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
 
-            <div class="col-lg-4 col-md-4 isotope-item filter-motion">
-              <div class="portfolio-card">
-                 
-                <div class="portfolio-image">
-                  <img src="/assets/img/project3img.jpg" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category ">Magazine</span>
-                  <a href="/assets/projects/Magazine final drafttttt.pdf" target="_blank"> <h3 style="font-family: livvic , sans-serif;" >The What If? Series</h3></a>
-      
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+        <!-- Portfolio Item 1 -->
+        <div class="col-lg-4 col-md-4 portfolio-item isotope-item filter-web">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="/assets/img/project1img.jpg" class="img-fluid" alt="" loading="lazy">
+            </div>
+            <div class="portfolio-content">
+              <span class="category">Typography Posters</span>
+              <a href="/assets/projects/chumbak posters f1.pdf" target="_blank">
+                <h3 style="font-family: Livvic, sans-serif;">Creative Poster Making</h3>
+              </a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
 
-          </div><!-- End Portfolio Container -->
+        <!-- Portfolio Item 2 -->
+        <div class="col-lg-4 col-md-4 portfolio-item isotope-item filter-graphics">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="/assets/img/project2img.jpg" class="img-fluid" alt="" loading="lazy">
+            </div>
+            <div class="portfolio-content">
+              <span class="category">Illustration Zien</span>
+              <a href="/assets/projects/Comic illustration mohini.pdf" target="_blank">
+                <h3 style="font-family: Livvic, sans-serif;">Storytelling through Illustrations</h3>
+              </a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
 
-        </div>
+        <!-- Portfolio Item 3 -->
+        <div class="col-lg-4 col-md-4 isotope-item filter-motion">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="/assets/img/project3img.jpg" class="img-fluid" alt="" loading="lazy">
+            </div>
+            <div class="portfolio-content">
+              <span class="category">Magazine</span>
+              <a href="/assets/projects/Magazine final drafttttt.pdf" target="_blank">
+                <h3 style="font-family: Livvic, sans-serif;">The What If? Series</h3>
+              </a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
 
-      </div>
+        <!-- Portfolio Item 3 -->
+        <div class="col-lg-4 col-md-4 isotope-item filter-motion">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="/assets/img/project3img.jpg" class="img-fluid" alt="" loading="lazy">
+            </div>
+            <div class="portfolio-content">
+              <span class="category">Magazine</span>
+              <a href="/assets/projects/Magazine final drafttttt.pdf" target="_blank">
+                <h3 style="font-family: Livvic, sans-serif;">The What If? Series</h3>
+              </a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+        <!-- Portfolio Item 3 -->
+        <div class="col-lg-4 col-md-4 isotope-item filter-motion">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="/assets/img/project3img.jpg" class="img-fluid" alt="" loading="lazy">
+            </div>
+            <div class="portfolio-content">
+              <span class="category">Magazine</span>
+              <a href="/assets/projects/Magazine final drafttttt.pdf" target="_blank">
+                <h3 style="font-family: Livvic, sans-serif;">The What If? Series</h3>
+              </a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+        <!-- Portfolio Item 3 -->
+        <div class="col-lg-4 col-md-4 isotope-item filter-motion">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="/assets/img/project3img.jpg" class="img-fluid" alt="" loading="lazy">
+            </div>
+            <div class="portfolio-content">
+              <span class="category">Magazine</span>
+              <a href="/assets/projects/Magazine final drafttttt.pdf" target="_blank">
+                <h3 style="font-family: Livvic, sans-serif;">The What If? Series</h3>
+              </a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+      </div><!-- End Portfolio Container -->
+    </div>
+  </div>
 
-    </section><!-- /Portfolio Section -->
+</section><!-- /Portfolio Section -->
+
 
 
     
